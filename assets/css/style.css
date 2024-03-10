@@ -1,63 +1,132 @@
+/* Introduce web application colour palette */
 :root {
-    --mc1: #360568;
-    --mc2: #A5E6BA;
-    --light: #D2F3DD;
-    --dark: #1B0334;
-    --test-border: var(--dark) 3px solid;
+    --mc1: #A5E6BA;
+    --mc2: #360568;
+    --light0: #fff;
+    --light1: #D2F3DD;
+    --light2: #9B82B4;
+    --dark1: #53735D;
+    --dark2: #1B0334;
+    /* test-border used to create wireframing */
+    --test-border: var(--dark2) 3px solid;
 }
 
+/* Create a flexbox for the header, creating display for a portrait phone first so the navbar is being displayed as a column with the content aligned at the centre */
 header {
-    margin: 3px;
-    border: var(--test-border);
     display: flex;
-    justify-content: space-between;
-    
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: var(--dark2);
+    align-items: center;
     }
 
-#illakaya {
-    margin: 3px;
-    border: var(--test-border);
+/* Stylising the title of web page */
+#mimi {
+    font-size: 3em;
+    color: var(--light2);
+    padding: 0.3em 0em;
+    margin-right: auto;
 }
 
-#navbar {
-    margin: 3px;
-    border: var(--test-border);
+/* Displaying nav bar as a column for a phone */
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-weight: bolder;
 }
 
+/* Styling nav bar */
+#navbar a{
+    text-decoration: none;
+    color: var(--light2);
+    padding: 0.5em;
+}
+
+/* Add a separating image from the content with a subtitle in the bottom right corner */
 .hero {
-    margin: 3px;
-    border: var(--test-border);
-    height: 10em;
+    height: 12em;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    background-image: url(../images/pexels-google-deepmind-17485709.jpg);
+    background-size: cover;
+    background-position: bottom;
+    font-weight: bolder;
+    color: var(--dark2);
+    padding: 0.3em 0.7em;
 }
 
+/* set overall page's colour scheme */
+body {
+    background-color: var(--light1);
+    color: var(--dark2);
+}
+
+/* Make each section a flex box, display as a column for mobile display */
 .main-box {
-    margin: 3px;
-    border: var(--test-border);
     display: flex;
+    flex-direction: column;
 }
 
+/* make each section heading have a margin at the bottom */
 h2 {
-    margin: 3px;
-    border: var(--test-border);
-    width: 20%;
-    text-align: right;
-    padding: 0em 0.5em;
+    margin: 0.5em;
+    border-bottom: 0.15em var(--mc2) solid;
+    /* width: 20%; */
+    /* text-align: right; */
+    /* padding: 0.5em; */
 }
 
+/* have the content of each section have padding */
 .right-inside {
-    margin: 3px;
-    border: var(--test-border);
-    width: 80%;
+    /* flex-wrap: wrap; */
+    padding: 0.3em 1em;
+    /* width: 80%; */
 }
 
-a {
-    display: block;
+/* For the links to the applications created, create a flex box in which will wrap around if the screen is small */
+.work-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* make the children grow or shrink in a 1 to 1 ratio with a flex-basis (min-width) of 10em */
+.work-flex a {
+    margin: 1%;
+    border: var(--test-border);
+    height: 10em;
+    flex: 1 1 10em;
+    position: relative;
+}
+
+.work-flex img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    background-color: var(--dark2);
+    padding: 0.3em;
+    color: var(--light0);
+    max-width: 90%;
+    z-index: 1;
 }
 
 footer {
-    margin: 3px;
-    border: var(--test-border);
+    padding: 1%;
+    background-color: var(--dark2);
+    color: var(--mc1);
+    text-align: center;
+    font-weight: bolder;
 }
