@@ -1,3 +1,4 @@
+<!-- Remember for next time, use ! to auto-fill majority of the html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +10,11 @@
 </head>
 
 <body>
-    <!-- Create a header bar that has a brand name on the left and a nav bar on the right -->
+    <!-- Create a header bar that has a brand name and a nav bar -->
     <header>
         <div id="navbar">
+            <h1 id="mimi">Mimi Nguyen</h1>
             <ul>
-                <h1 id="mimi">Mimi Nguyen</h1>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact-me">Contact me</a></li>
@@ -27,9 +28,11 @@
 
     <!-- Info to include in the page -->
     <main>
+        <!-- Each section has a main box class that can be rearranged using CSS -->
         <!-- about me section -->
         <section class="main-box" id="about-me">
             <h2>About me</h2>
+            <!-- box for content displayed on the side -->
             <div class="right-inside">
                 <p>USYD Coding Bootcamp student studying to become a developer.</p><br>
                 <p>Currently working full-time as an Educator.</p>
@@ -40,38 +43,42 @@
         <section class="main-box" id="work">
             <h2>Work</h2>
             <div class="right-inside">
+                <!-- create two work flex boxes where the first project is the main focus -->
                 <div class="work-flex">
-                    <a href="">
+                    <a href="https://illakaya.github.io/01-challenge-accessibility/">
                         <div class="text-overlay">
                             <h3>Accessibility</h3>
                             <p>HTML / CSS</p>
                         </div>
-                        <img src="./assets/images/pexels-google-deepmind-17485705.jpg" alt="">
-                        
+                        <img src="./assets/images/pexels-google-deepmind-17485705.jpg" alt="Google Deep Mind image 1">
                     </a>
                 </div>
+
                 <div class="work-flex">
                     <a href="">
                         <div class="text-overlay">
                             <h3>Sample Landing Page</h3>
                             <p>HTML / CSS</p>
                         </div>
-                        <img src="./assets/images/pexels-google-deepmind-17485707.jpg" alt="">
+                        <img src="./assets/images/pexels-google-deepmind-17485707.jpg" alt="Google Deep Mind image 2">
                     </a>
                     <a href="">
                         <div class="text-overlay">
                             <h3>Placeholder #1</h3>
+                            <p>Programming language</p>
                         </div>
-                        <img src="./assets/images/pexels-google-deepmind-17485710.jpg" alt="">
+                        <img src="./assets/images/pexels-google-deepmind-17485710.jpg" alt="Google Deep Mind image 3">
                     </a>
                     <a href="">
                         <div class="text-overlay">
                             <h3>Placeholder #2</h3>
+                            <p>Programming language</p>
                         </div>
-                        <img src="./assets/images/pexels-google-deepmind-18069156.jpg" alt="">
+                        <img src="./assets/images/pexels-google-deepmind-18069156.jpg" alt="Google Deep Mind image 4">
                     </a><a href="">
                         <div class="text-overlay">
                             <h3>Placeholder #3</h3>
+                            <p>Programming language</p>
                         </div>
                         <img src="./assets/images/pexels-google-deepmind-17485709.jpg" alt="">
                     </a>
@@ -83,9 +90,9 @@
         <section class="main-box" id="contact-me">
             <h2>Contact Me</h2>
             <ul class="right-inside">
-                <li><a href="mjnguyen.dev@gmail.com">mjnguyen.dev@gmail.com</a></li>
-                <li><a href="https://github.com/illakaya">GitHub</a></li>
-                <li><a href="https://music.youtube.com/channel/UCg0l5rzLvbJgujg0UMvGq0Q?si=5V16wZIYPZ8wOp7a">YouTube Music</a></li>
+                <li>Email: <a href="mailto:mjnguyen.dev@gmail.com">mjnguyen.dev@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/illakaya">illakaya</a></li>
+                <li>YouTube Music: <a href="https://music.youtube.com/channel/UCg0l5rzLvbJgujg0UMvGq0Q?si=5V16wZIYPZ8wOp7a">Mochi Pi</a></li>
             </ul>
         </section>
 
