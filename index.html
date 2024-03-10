@@ -11,12 +11,9 @@
 <body>
     <!-- Create a header bar that has a brand name on the left and a nav bar on the right -->
     <header>
-        <div id="illakaya">
-            <h1>illakaya</h1>
-        </div>
-
         <div id="navbar">
             <ul>
+                <h1 id="mimi">Mimi Nguyen</h1>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact-me">Contact me</a></li>
@@ -26,28 +23,59 @@
     </header>
 
     <!-- create space for background image -->
-    <div class="hero"><p>random background image with a cool caption</p></div>
+    <div class="hero"><p>Full Stack Flex Web Development</p></div>
 
     <!-- Info to include in the page -->
     <main>
         <!-- about me section -->
-        <article class="main-box" id="about-me">
+        <section class="main-box" id="about-me">
             <h2>About me</h2>
             <div class="right-inside">
-                <p>short intro</p>
-                <p>more about me</p>
+                <p>USYD Coding Bootcamp student studying to become a developer.</p><br>
+                <p>Currently working full-time as an Educator.</p>
             </div>
-        </article>
+        </section>
 
         <!-- links to work -->
         <section class="main-box" id="work">
             <h2>Work</h2>
             <div class="right-inside">
-                <a href="">work 1</a>
-                <a href="">work 2</a>
-                <a href="">work 3</a>
-                <a href="">work 4</a>
-                <a href="">work 5</a>
+                <div class="work-flex">
+                    <a href="">
+                        <div class="text-overlay">
+                            <h3>Accessibility</h3>
+                            <p>HTML / CSS</p>
+                        </div>
+                        <img src="./assets/images/pexels-google-deepmind-17485705.jpg" alt="">
+                        
+                    </a>
+                </div>
+                <div class="work-flex">
+                    <a href="">
+                        <div class="text-overlay">
+                            <h3>Sample Landing Page</h3>
+                            <p>HTML / CSS</p>
+                        </div>
+                        <img src="./assets/images/pexels-google-deepmind-17485707.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <div class="text-overlay">
+                            <h3>Placeholder #1</h3>
+                        </div>
+                        <img src="./assets/images/pexels-google-deepmind-17485710.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <div class="text-overlay">
+                            <h3>Placeholder #2</h3>
+                        </div>
+                        <img src="./assets/images/pexels-google-deepmind-18069156.jpg" alt="">
+                    </a><a href="">
+                        <div class="text-overlay">
+                            <h3>Placeholder #3</h3>
+                        </div>
+                        <img src="./assets/images/pexels-google-deepmind-17485709.jpg" alt="">
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -55,17 +83,16 @@
         <section class="main-box" id="contact-me">
             <h2>Contact Me</h2>
             <ul class="right-inside">
-                <li>Phone number</li>
-                <li>Email</li>
-                <li><a href="">GitHub</a></li>
-                <li>Twitter</li>
-                <li>Spotify</li>
+                <li><a href="mjnguyen.dev@gmail.com">mjnguyen.dev@gmail.com</a></li>
+                <li><a href="https://github.com/illakaya">GitHub</a></li>
+                <li><a href="https://music.youtube.com/channel/UCg0l5rzLvbJgujg0UMvGq0Q?si=5V16wZIYPZ8wOp7a">YouTube Music</a></li>
             </ul>
         </section>
 
         <!-- include a footer on app creation -->
         <footer>
-            year and brand
+            <p>Made with 💚 by illakaya</p>
+            <p>&copy 2024</p>
         </footer>
     </main>
 </body>
