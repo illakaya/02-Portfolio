@@ -19,7 +19,7 @@ No extra installations are required.
 
 ## Usage
 
-Link to website: https://illakaya.github.io/02-Portfolio/
+Link to website: https://illakaya.github.io/Mimi-Nguyen-Portfolio/ <br>
 No special instructions are needed to use the application.
 
 ## Credits
