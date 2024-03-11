@@ -106,7 +106,7 @@ h2 {
 }
 
 /* image link has full opacity when cursor hovers */
-a:hover > * {
+img:hover {
     opacity: 1;
 }
 
