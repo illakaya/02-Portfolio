@@ -43,14 +43,19 @@
 .hero {
     height: 12em;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-end;
     background-image: url(../images/pexels-google-deepmind-17485709.jpg);
     background-size: cover;
     background-position: bottom;
     font-weight: bolder;
     color: var(--dark2);
-    padding: 0.3em 0.7em;
+    padding: 0em 0.7em;
+}
+
+/* Added a profile picture */
+.hero img {
+    height: 85%;
 }
 
 /* set overall page's colour scheme */
@@ -74,9 +79,7 @@ h2 {
 
 /* have the content of each section have padding */
 .right-inside {
-    /* flex-wrap: wrap; */
     padding: 0.3em 1em;
-    /* width: 80%; */
 }
 
 /* For the links to the applications created, create a flex box in which will wrap around if the screen is small */
