@@ -1,7 +1,4 @@
 # 02-Portfolio
-Building a portfolio page to showcase my skills and talents
-
-# <Your-Project-Title>
 
 ## Description
 
@@ -12,6 +9,13 @@ This project was built in order to create a portfolio page to showcase my skills
 - apply CSS variables to stylise an application to the designer's liking
 - utilise pseudo-classes and elements to make an application more interactive
 - select parent or child elements using selectors or combinators
+
+The image below shows the application's layout on a screen with a width below 768px.
+![image](https://github.com/illakaya/Mimi-Nguyen-Portfolio/assets/161125561/ed58e156-4dc1-40cb-b049-8881aa94122c)
+
+The image below shows the application's layout on a screen with a width above 768px.
+![image](https://github.com/illakaya/Mimi-Nguyen-Portfolio/assets/161125561/23994507-984e-49b6-a6dd-831909cafde0)
+
 
 ## Installation
 
